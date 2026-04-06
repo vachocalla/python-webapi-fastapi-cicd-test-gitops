@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repository: https://github.com/vachocalla/python-webapi-fastapi-cicd-test
+  repository: ghcr.io/vachocalla/python-webapi-fastapi-cicd-test
   pullPolicy: Always
   tag: "latest"
 
