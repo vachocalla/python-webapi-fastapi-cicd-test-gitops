@@ -10,19 +10,3 @@ spec:
       protocol: TCP
   selector:
     app: {{ .Release.Name }}
-
-#apiVersion: v1
-#kind: Service
-#metadata:
-#  name: {{ include "mi-app-chart.fullname" . }}
-#  labels:
-#    {{- include "mi-app-chart.labels" . | nindent 4 }}
-#spec:
-#  type: {{ .Values.service.type }}
-#  ports:
-#    - port: {{ .Values.service.port }}
-#      targetPort: http
-#      protocol: TCP
-#      name: http
-#  selector:
-#    {{- include "mi-app-chart.selectorLabels" . | nindent 4 }}
